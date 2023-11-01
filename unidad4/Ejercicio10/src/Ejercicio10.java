@@ -1,6 +1,7 @@
 public class Ejercicio10 {
 
   public static void main(String[] args) throws Exception {
+    String horoscopo = "";
     System.out.println("Introduce primero el día de nacimiento");
     String a = System.console().readLine();
     int dia = Integer.parseInt(a);
@@ -8,43 +9,94 @@ public class Ejercicio10 {
     String b = System.console().readLine();
     int mes = Integer.parseInt(b);
 
-    int total = ((mes * 30) - dia) + 5;
+    switch (mes) {
+      case 1:
+        if (dia <= 21) {
+          horoscopo = "Capricornio";
+        } else {
+          horoscopo = "Acuario";
+        }
 
-    if (total <= 29) {
-      System.out.println("Su horoscopo es Acuario");
+        break;
+      case 2:
+        if (dia < 18) {
+          horoscopo = "Acuario";
+        } else {
+          horoscopo = "Piscis";
+        }
+        break;
+      case 3:
+        if (dia <= 20) {
+          horoscopo = "Piscis";
+        } else {
+          horoscopo = "Aries";
+        }
+        break;
+      case 4:
+        if (dia <= 19) {
+          horoscopo = "Aries";
+        } else {
+          horoscopo = "Tauro";
+        }
+        break;
+      case 5:
+        if (dia <= 20) {
+          horoscopo = "Tauro";
+        } else {
+          horoscopo = "Géminis";
+        }
+        break;
+      case 6:
+        if (dia <= 21) {
+          horoscopo = "Géminis";
+        } else {
+          horoscopo = "Cáncer";
+        }
+        break;
+      case 7:
+        if (dia <= 21) {
+          horoscopo = "Cáncer";
+        } else {
+          horoscopo = "Leo";
+        }
+        break;
+      case 8:
+        if (dia <= 22) {
+          horoscopo = "Leo";
+        } else {
+          horoscopo = "Virgo";
+        }
+        break;
+      case 9:
+        if (dia <= 22) {
+          horoscopo = "Virgo";
+        } else {
+          horoscopo = "Libra";
+        }
+        break;
+      case 10:
+        if (dia <= 22) {
+          horoscopo = "Libra";
+        } else {
+          horoscopo = "Escorpio";
+        }
+        break;
+      case 11:
+        if (dia <= 21) {
+          horoscopo = "Escorpio";
+        } else {
+          horoscopo = "Sagitario";
+        }
+        break;
+      case 12:
+        if (dia <= 21) {
+          horoscopo = "Sagitario";
+        } else {
+          horoscopo = "Capricornio";
+        }
+        break;
+      default:
     }
-    if (total >= 30 && total <= 60) {
-      System.out.println("Su Horoscopo es Piscis");
-    }
-    if (total >= 61 && total <= 90) {
-      System.out.println("Su horoscopo es Aries");
-    }
-    if (total >= 91 && total <= 120) {
-      System.out.println("Su horoscopo es Tauro");
-    }
-    if (total >= 121 && total <= 150) {
-      System.out.println("Su horoscopo es Géminis");
-    }
-    if (total >= 151 && total <= 180) {
-      System.out.println("Su horoscopo es Cáncer");
-    }
-    if (total >= 181 && total <= 210) {
-      System.out.println("Su horoscopo es Leo");
-    }
-    if (total >= 211 && total <= 240) {
-      System.out.println("Su horoscopo es Virgo");
-    }
-    if (total >= 241 && total <= 270) {
-      System.out.println("Su horoscopo es Libra");
-    }
-    if (total >= 271 && total <= 300) {
-      System.out.println("Su horoscopo es Escorpio");
-    }
-    if (total >= 301 && total <= 330) {
-      System.out.println("Su horoscopo es Sagitario");
-    }
-    if (total >= 331 && total <= 360) {
-      System.out.println("Su horoscopo es Capricornio");
-    }
+    System.out.println("Su horoscopo es " + horoscopo);
   }
 }
