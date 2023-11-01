@@ -7,10 +7,8 @@ public class Ejercicio11 {
         System.out.println("Introduzca los minutos");
         String b = System.console().readLine();
         int minutos = Integer.parseInt(b);
-        int totalhora = 23 - hora;
-        int totalmin = 60 - minutos;
-        int totalseg = (totalhora * 3600) + (totalmin * 60);
-        int segdia = 86400;
+        int totalseg = (hora * 3600) + (minutos * 60);
+        int segdia = 24 * 3600;
         System.out.println("Quedan para medianoche " + (segdia - totalseg) + " segundos");
     }
 }
