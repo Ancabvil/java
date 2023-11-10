@@ -2,18 +2,24 @@ public class Ejercicio7 {
     public static void main(String[] args) throws Exception {
         System.out.println("Introduzca el código de la caja fuerte.");
         int codigo = 5733;
-        System.out.print("Introduzca un código de cuatro cifras:");
-        String code = System.console().readLine();
-        int pass = Integer.parseInt(code);
         int i = 4;
-        if (pass == codigo) {
-            System.out.println("El código es correcto, ha abierto la caja fuerte.");            
-        } else {
-            while (pass != codigo) {
-                System.out.printf("Código incorrecto, le quedan  %1d " , i , " intentos");
-                i--;
-                
+        int pass;
+        boolean acierto = false;
+        do{
+        System.out.print("Codigo: ");
+        pass = Integer.parseInt(System.console().readLine());
+        if (pass==codigo) {
+            acierto = true;            
+            }else{
+            System.out.println("Clave incorrecta.");
+            }
+            i--;
+            }   while ((i > 0) && (!acierto));
+                if (acierto){
+                System.out.println("El Código es correcto, se abre la caja fuerte.");
+                }else{
+                System.out.println("No le quedan intentos");
+                }        
             }
         }
-    }
-}
+    

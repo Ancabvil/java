@@ -2,6 +2,7 @@ public class Ejercicio9 {
     public static void main(String[] args) throws Exception {
         System.out.println("Te resuelvo este tipo de ecuación ax2 + bx + c = 0");
         System.out.println("Introduce el valor para a");
+        System.out.printf("  ñ " );
         String num1 = System.console().readLine();
         double a = Double.parseDouble(num1);
         System.out.println("Introduce el valor para b");
