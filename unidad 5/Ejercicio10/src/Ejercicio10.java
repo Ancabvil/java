@@ -4,13 +4,13 @@ public class Ejercicio10 {
         double i = 0;
         double suma = 0;
         double num = 0;
-        while (num >= 0){
+        while (suma >= 0){
         System.out.print("Introduzca un número:");
-        num = Double.parseDouble(System.console().readLine());
+        suma = Double.parseDouble(System.console().readLine());
         i++;
-        suma +=num;
+        num +=suma;
         }
-        System.out.println("Has introducido " + (num -i) + " números positivos.");
-        System.out.println("La media es " + (suma - i)/(num -1));
+        System.out.println("Has introducido " + (i -1) + " números positivos.");
+        System.out.println("La media es " + (num - suma)/(i -1));
     }
 }
