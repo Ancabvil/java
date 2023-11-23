@@ -18,6 +18,5 @@ public class Ejercicio29 {
                  System.out.println(i + " ");
                }
             }
-        
     }
 }
