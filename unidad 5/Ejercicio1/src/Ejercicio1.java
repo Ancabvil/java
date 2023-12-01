@@ -4,5 +4,6 @@ public class Ejercicio1 {
         for(int i = 5; i <= 100; i+=5){
             System.out.println(i);
         }
+        System.out.printf(" \u21c3", args);
     }
 }
