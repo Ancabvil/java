@@ -5,8 +5,7 @@ public class Ejercicio3 {
     int num[]= new int[10];
     for(int i = 0; i < 10; i++){
     System.out.print("Introduce un número: ");
-    int numero = Integer.parseInt(System.console().readLine());
-    num[i] = numero;
+    num[i] =Integer.parseInt(System.console().readLine());
 }
     for (int i = 9; i >= 0; i--) {
     System.out.println(num[i]);    
