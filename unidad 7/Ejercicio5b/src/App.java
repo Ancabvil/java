@@ -20,7 +20,8 @@ public class App {
             for(columnas = 0; columnas < 11; columnas++){
                 numero=(int)(Math.random()*1001);
                 num[filas][columnas]=numero;
-                System.out.println(num[filas][columnas]);
+                System.out.print(num[filas][columnas]);
+                System.out.println();
             }
             
         }
@@ -29,7 +30,7 @@ public class App {
             System.out.print(" " + filas + " │");
             for(columnas = 0; columnas < 10; columnas++) {
             num[filas][columnas] = (int)(Math.random() * 1001);
-            System.out.println(num[filas][columnas]);
+            System.out.print(num[filas][columnas] + " ");
             Thread.sleep(100);
             // Calcula el mínimo y guarda sus coordenadas
             if (num[filas][columnas] < minimo) {
@@ -44,7 +45,7 @@ public class App {
             columnasMaximo = columnas;
             }
             }
-            System.out.println("┘\n\nEl máximo es " + maximo + " y está en la fila " + filaMaximo + ", columna " + columnasMaximo);
+            System.out.println("El máximo es " + maximo + " y está en la fila " + filaMaximo + ", columna " + columnasMaximo);
             System.out.println("El mínimo es " + minimo + " y está en la fila " + filaMinimo + ", columna " + columnasMinimo);
 
 
