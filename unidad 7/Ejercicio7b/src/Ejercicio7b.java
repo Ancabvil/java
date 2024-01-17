@@ -1,7 +1,7 @@
 public class Ejercicio7b {
 
   public static void main(String[] args) throws Exception {
-    System.out.println("Hello, World!");
+    System.out.println("Buscaminas mejorado.");
 
     // se definen constantes para representar el
     // contenido de las celdas
@@ -48,7 +48,7 @@ public class Ejercicio7b {
         }
         System.out.println();
       }
-      System.out.println(" ----------\n 0 1 2 3 4\n");
+      System.out.println(" --------\n 0 1 2 3\n");
       // pide las coordenadas
       System.out.print("Coordenada x: ");
       x = Integer.parseInt(System.console().readLine());
@@ -58,6 +58,9 @@ public class Ejercicio7b {
       switch (cuadrante[x][y]) {
         case VACIO:
           cuadrante[x][y] = INTENTO;
+          if ((Math.abs(x - minaX) < 2) && (Math.abs(y - minaY) < 2)) {
+            System.out.println("Cuidado, hay una mina cerca.");
+            }
           break;
         case MINA:
           System.out.println("Lo siento, has perdido.");
