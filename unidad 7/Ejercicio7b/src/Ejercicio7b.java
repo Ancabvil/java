@@ -97,5 +97,8 @@ public class Ejercicio7b {
       System.out.println();
     }
     System.out.println(" ----------\n 0 1 2 3 4\n");
+
+
+
   }
 }

@@ -23,14 +23,13 @@ System.out.print("Ocupación ");
         } else{
             int mesaVacia = 0;
             boolean hayMesaVacia = false;
-
             for (int i = 9; i <9; i++) {
                     if (mesa[i] == 0) {
                         mesaVacia = i;
                         hayMesaVacia = true;
                         }
                     }
-                    
+                
                     if (hayMesaVacia) {
                         mesa[mesaVacia]= ocupado;
                         System.out.println("Por favor, sientese en la mesa " + (mesaVacia + 1) + ".");
