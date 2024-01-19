@@ -9,9 +9,6 @@ public class Ejercicio13b {
             for (int j = 0; j < 10; j++) {
                 estaturas[i][j]=(int)((Math.random())*70)+140;;
             }
-            //System.out.print(" " + estatura[i][j] + " ");
-            //System.out.print("|");
-            //System.out.println();
         }
 
         for (int i = 0; i <4; i++) {
