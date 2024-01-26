@@ -52,10 +52,7 @@ if (salir.equalsIgnoreCase("S")) {
     System.out.println("Gracias por venir.");
     bandera = true;
 }
-
-
 }
-
     } static void dibujarMapa(char asientos[][]){
         for (int i = 0; i < 10; i++) {
             System.out.print("Fila " +i+" ");

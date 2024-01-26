@@ -1,6 +1,3 @@
-import java.util.zip.ZipEntry;
-import javax.sound.midi.Soundbank;
-
 public class TokiPakala {
 
   public static void main(String[] args) throws Exception {
