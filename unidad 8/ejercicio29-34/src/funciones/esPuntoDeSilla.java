@@ -1,8 +1,4 @@
 package funciones;
-import java.lang.reflect.Array;
-
-import funciones.bidimensional.*;
-
 public class esPuntoDeSilla {
     public static boolean EspuntoDeSilla(int x[][], int i, int j){
         int[]fila = filaDeArrayBiInt.FilaArrayBiInt(x, i);
