@@ -1,11 +1,11 @@
-public class Gato{
+public class Gato extends Mamifero{
 
-    public void gato(int edad, int peso){
+    public void gato(int patas, int peso){
         System.out.print(" tiene ");
-        System.out.print(edad);
-        System.out.print(" años y pesa ");
+        System.out.print(patas);
+        System.out.print(" patas y pesa ");
         System.out.print(peso);
-System.out.println(" kilos");
+        System.out.println(" kilos");
     }
     
 }

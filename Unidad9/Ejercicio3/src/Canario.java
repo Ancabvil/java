@@ -1,10 +1,10 @@
-public class Canario {
+public class Canario extends Mamifero{
     
-    public void canario(int peso, String color){
+    public void canario(int alas, String color){
 
-        System.out.print(" pesa ");
-        System.out.print(peso);
-        System.out.print(" kilos y es de color ");
+        System.out.print(" tiene ");
+        System.out.print(alas);
+        System.out.print(" alas y es de color ");
         System.out.println(color);
     }
 }
