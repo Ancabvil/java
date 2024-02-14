@@ -4,9 +4,19 @@ public class Ejercicio1Array {
         Gato[] gato = new Gato[4];
         int i;
 
+        Gato pepin = new Gato();
+
+        pepin.respirar();
+        pepin.setNombre("Pepin");
+        pepin.setColor("Blanco");
+        pepin.setEdad(4);
+
+        System.out.println(pepin.getNombre());
+        System.out.println(pepin.getColor());
+        System.out.println(pepin.getEdad());
         for ( i = 0; i < 4; i++) {
             gato[i]=new Gato();
-            System.out.println("  /nGato nº " + (i+1));
+            System.out.println("Gato nº " + (i+1));
             System.out.print("Nombre: ");
             gato[i].setNombre(System.console().readLine());
             System.out.print("Color: ");
