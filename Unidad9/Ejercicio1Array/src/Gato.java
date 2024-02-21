@@ -22,28 +22,29 @@ public class Gato extends animal implements felinos {
     public void setColor(String color) {
         this.color = color;
     }
-
-    @Override
-    public void peleaCon(animal contrincante) {
-        // TODO Auto-generated method stub
-        
-    }
     @Override
     public void come(String comida) {
-        // TODO Auto-generated method stub
-        
-    }
-    @Override
-    public void hazRuido() {
-        // TODO Auto-generated method stub
         
     }
     @Override
     public String getCodigo() {
-        // TODO Auto-generated method stub
+       
         return null;
     }
+    @Override
+    public void hazRuido() {
+       
         
+    }
+    @Override
+    public void peleaCon(animal contrincante) {
+       
+        
+    }
+    
+    
+
+    
 
 
 }

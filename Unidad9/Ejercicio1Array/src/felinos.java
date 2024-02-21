@@ -6,4 +6,3 @@ void hazRuido();
 void come(String comida);
 void peleaCon(animal contrincante);
 }
-

@@ -6,7 +6,7 @@ public class Ejercicio1Array {
 
         Gato pepin = new Gato();
 
-        pepin.respirar();
+       /*  pepin.respirar();
         pepin.setNombre("Pepin");
         pepin.setColor("Blanco");
         pepin.setEdad(4);
@@ -14,7 +14,7 @@ public class Ejercicio1Array {
         System.out.println(pepin.getNombre());
         System.out.println(pepin.getColor());
         System.out.println(pepin.getEdad());
-        for ( i = 0; i < 4; i++) {
+        */for ( i = 0; i < 4; i++) {
             gato[i]=new Gato();
             System.out.println("Gato nº " + (i+1));
             System.out.print("Nombre: ");
@@ -34,5 +34,6 @@ public class Ejercicio1Array {
             System.out.println("Edad: " + gato[i].getEdad());
             
         }
-    }
+        
+}
 }

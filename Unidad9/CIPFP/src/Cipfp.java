@@ -5,6 +5,20 @@ private String nombre;
 private String direccion;
 private long telefono;
 
+private ArrayList Estudiante;
+private ArrayList Departamento;
+
+ArrayList <Estudiante> estudiante = new ArrayList<>();
+ArrayList <Departamento> departamento = new ArrayList<>();
+
+
+public Cipfp(String nombre, String direccion, long telefono, java.util.ArrayList departamentos, java.util.ArrayList estudiante) {
+    this.nombre = nombre;
+    this.direccion = direccion;
+    this.telefono = telefono;
+    this.Departamento = departamentos;
+    this.Estudiante = estudiante;
+}
 public String getDireccion() {
     return direccion;
 }
@@ -24,32 +38,36 @@ public void setTelefono(long telefono) {
     this.telefono = telefono;
 }
 
+public ArrayList getDepartamentos(ArrayList departamento) {
 
-public void AñadirEstudiante(){
+    return departamento;
+}
 
+
+public void AñadirEstudiante(ArrayList estudiante){
+estudiante.add(estudiante);
 
 }
 
-public void EliminarEstudiante(){
-
-
-}
-
-public void AñadirDepartamento(){
-
+public void EliminarEstudiante(ArrayList estudiante){
+estudiante.remove(estudiante);
 
 }
 
-public void EliminarDepartamento(){
-
+public void AñadirDepartamento(ArrayList departamento){
+departamento.add(departamento);
 
 }
 
-public Estudiante[] ObtenerEstudiante(){
+public void EliminarDepartamento(ArrayList departamento){
+departamento.remove(departamento);
 
-    int i = 0;
-    
-    return new Estudiante[i] ;
+}
+
+@Override
+public String toString() {
+    return nombre + ", direccion=" + direccion + ", telefono=" + telefono + ", Departamentos="
+            + Departamento + ", estudiantes= " +Estudiante;
 }
 
 }
