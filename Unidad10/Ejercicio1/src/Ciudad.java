@@ -4,8 +4,8 @@ public class Ciudad {
     
         ArrayList <String> ciudad = new ArrayList<>();
 
-        public Ciudad(ArrayList<String> ciudades) {
-            this.ciudad = ciudades;
+        public Ciudad(ArrayList<String> ciudad) {
+            this.ciudad = ciudad;
         }
         public ArrayList<String> getCiudades() {
             System.out.println("Introzca posición: ");
@@ -18,7 +18,13 @@ public class Ciudad {
             System.out.println("Introduzca la ciudad: ");
             String city = System.console().readLine();
             ciudad.add(city);
-            
+        }
+        public void AñadirCiudad(ArrayList ciudad){
+            ciudad.add(ciudad);
+        }
+
+        public void EliminarCiudad(ArrayList ciudad){
+            ciudad.remove(ciudad);
         }
         @Override
         public String toString() {

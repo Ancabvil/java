@@ -1,25 +1,27 @@
 import java.util.ArrayList;
 
 public class CodigoPostal {
-            ArrayList <Integer> codigoPostal = new ArrayList<>();
+    private int codigo;
+    ArrayList<Integer> codigoPostal = new ArrayList<>();
+    
+    public int getCodigo() {
+        return codigo;
+    }
 
-            public CodigoPostal(ArrayList<Integer> codigoPostal) {
-                this.codigoPostal = codigoPostal;
-            }
+    public void setCodigo(int codigo) {
+        this.codigo = codigo;
+    }
+    public void añadirCodigo(ArrayList codigoPostal){
+        codigoPostal.add(codigo);
+    }
 
-            public ArrayList<Integer> getCodigoPostal() {
-                return codigoPostal;
-            }
+    public void eliminarCodigo(ArrayList codigoPostal){
+        codigoPostal.remove(codigo);
+    }
 
-            public void setCodigoPostal(ArrayList<Integer> codigoPostal) {
-            
-                this.codigoPostal = codigoPostal;
-            System.out.println("Introduzca el Código Postal:");
-            int ciudad = Integer.parseInt(System.console().readLine());
-            codigoPostal.add(ciudad);
-            }
-            @Override
-            public String toString() {
-                return "CodigoPostal= " + codigoPostal;
-            }
+    @Override
+    public String toString() {
+        return ""+codigoPostal;
+    }
+
 }
