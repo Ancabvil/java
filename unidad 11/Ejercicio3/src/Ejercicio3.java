@@ -9,7 +9,8 @@ public class Ejercicio3 {
         System.out.println("Lee de dos archivos y los junta en uno.");
 
         try {
-            BufferedReader maiden1 = new BufferedReader(new FileReader("maiden1.txt"));
+if (args.length == 3) {
+    BufferedReader maiden1 = new BufferedReader(new FileReader("maiden1.txt"));
             String linea1 = maiden1.readLine();
 
             BufferedReader maiden2 = new BufferedReader(new FileReader("maiden2.txt"));
@@ -34,6 +35,10 @@ while (linea1 != null || linea2 != null) {
 b3.close();
 maiden1.close();
 maiden2.close();
+}else{
+    System.out.println("Necesito más argumentos");
+}
+            
 
             
         } catch (FileNotFoundException fnf) {
