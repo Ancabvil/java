@@ -1,0 +1,30 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 12 abr 2024, 18:06:01
+    Author     : cabre
+*/
+body{
+    background-color: azure;
+}
+div 
+{ 
+    display: flex;
+    font-family: Verdana;
+    align-self: center;
+    justify-content: center;
+    }
+p{
+        font-family: verdana;
+        align-self: center;
+        font-size: 21px;
+    }
+    h1{
+        display: flex;
+        font-family: Verdana;
+        color: blueviolet;
+        justify-content: center;
+        align-self: center;
+    }

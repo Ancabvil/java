@@ -1,4 +1,6 @@
 package unidad8.arrays2d;
+
+import java.util.Random;
 /**
  * @author Antonio Manuel Cabrera Villarejo
  * @param fila para las filas del array
@@ -8,17 +10,14 @@ package unidad8.arrays2d;
  * 
  */
 public class elementos {
-    static public int AleatorioDeArray2d(int fila, int columna, int max, int min){
-        int resultado=0;
-
-        //inicio el array bidimensional dandole al segundo array el método random del math
-        for (int i = 0; i < fila; i++) {
-            for (int j = 0; j < columna; j++) {
-                resultado = (int)((Math.random()*(max - min)+min +1));
-            }
-        }
+    static public int aleatorioDeArray2d(int[][] array2D){
+        Random random = new Random();
+        int filas = array2D.length;
+        int columnas = array2D[0].length;
+        int filaAleatoria = random.nextInt(filas);
+        int columnaAleatoria = random.nextInt(columnas);
 //Devuelvo el resultado
-return resultado;
+return array2D[filaAleatoria][columnaAleatoria];
 
     }
 }

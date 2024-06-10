@@ -1,13 +1,1 @@
-{"Nombre":"Pepe JimÃ©nez","Edad":32,"Correo electrÃ³nico":"pepe.jimenez@fpaltanturing.es",
-"DirecciÃ³n":{
-    "Calle":"Avenida AlmogÃ­a, 143",
-    "Ciudad":"MÃ¡laga",
-    "CÃ³digo postal":29007,
-    "Provincia":"MÃ¡laga"
-            },
-"Proyectos":[
-    {"TÃ­tulo":"Sitio web de un negocio","Presupuesto":4500},
-    {"TÃ­tulo":"Portal de ventas","Presupuesto":8500}
-            ],
-"MÃ©todos de pago":["PayPal","Stripe","Mastercard"]
-,"Identificador":1}
+{"Nombre":"Pepe Jiménez","Edad":32,"Correo electrónico":"pepe.jimenez@fpaltanturing.es","Dirección":{"Calle":"Avenida Almogía, 143","Ciudad":"Málaga","Código postal":29007,"Provincia":"Málaga"},"Proyectos":[{"Título":"Sitio web de un negocio","Presupuesto":4500},{"Título":"Portal de ventas","Presupuesto":8500}],"Métodos de pago":["PayPal","Stripe","Mastercard"],"Identificador":1}

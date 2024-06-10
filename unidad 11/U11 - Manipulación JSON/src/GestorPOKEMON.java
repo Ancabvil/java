@@ -1,10 +1,5 @@
 import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
 import java.io.Reader;
-import java.lang.reflect.Array;
-import java.util.Arrays;
-import java.util.Map;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -25,19 +20,15 @@ public class GestorPOKEMON {
           Long id = (Long) jsonObject.get("id");
           String nombre = (String) jsonObject.get("name");
           Long weight = (Long) jsonObject.get("weight");
+          String candy = (String) jsonObject.get("candy");
 
-
-          JSONArray arrayTipos = (JSONArray) jsonObject.get("type");
-          System.out.println("Tipo: " + arrayTipos);
-          System.out.println("Identificador: " + id);
-          System.out.println("Nombre: " + nombre);
-          System.out.println("Edad: " + weight);
     JSONArray arrayPokemons = (JSONArray) jsonObject.get("pokemon");
     arrayPokemons.forEach(entry -> {
         JSONObject pokemon = (JSONObject) entry;
-        System.out.println(pokemon.get("Tipo"));
-        System.out.println(pokemon.get("id"));
-        System.out.println(pokemon.get("nombre"));
+        System.out.println("Id: " + pokemon.get("id"));
+        System.out.println("Nombre: "+ pokemon.get("name"));
+        System.out.println("Peso: "+ pokemon.get("weight"));
+        System.out.println("Caramelo: "+ pokemon.get("candy"));
     });
     
 reader.close();
